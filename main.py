@@ -12,3 +12,4 @@ def main():
     agent = SimpleGroqAgent()
     output = agent.run("Hello Groq!")
     print(output)
+    
