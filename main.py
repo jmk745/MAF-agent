@@ -1,15 +1,6 @@
+from agents import Session
 from dotenv import load_dotenv
-from agent.py import *
+from agent import *
 import os
+import agent
 
-
-
-
-
-
-def main():
-
-    agent = SimpleGroqAgent()
-    output = agent.run("Hello Groq!")
-    print(output)
-    
