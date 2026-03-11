@@ -6,9 +6,8 @@ from userMemoryProvider import UserMemoryProvider
 
 
 # Retrieve Secrets
-load_dotenv() 
-GROK_API_KEY = os.getenv("GROK_API_KEY")
-GROK_PROJECT_ENDPOINT = os.getenv("GROK_PROJECT_ENDPOINT")
+load_dotenv()
+
 
 
 # Email Agent
@@ -18,9 +17,9 @@ class EmailAgent():
 
         # Gemini uses the OpenAI-compatible format
         gemini_client = OpenAIChatClient(
-            api_key=os.getenv("GEMINI_API_KEY"),
-            base_url=os.getenv("GEMINI_PROJECT_ENDPOINT"),
-            model_id="gemini-2.5-flash",
+            api_key=os.getenv("HUGGINGFACE_API_KEY"),
+            base_url=os.getenv("HUGGINGFACE_PROJECT_ENDPOINT"),
+            model_id=os.getenv("HUGGINGFACE_MODEL_ID"),
         )
 
 
